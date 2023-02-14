@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&display=swap");
+
+:root {
+  --main-color: #36486b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(30, 30, 30);
+  font-family: "Roboto Condensed", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding-top: 3rem;
+}
+
+.add {
+  background-color: var(--main-color);
+  font-size: 1.1rem;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  font-family: inherit;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  transition: 0.15s all ease-in-out;
+}
+
+.add:hover {
+  background-color: #fff;
+  color: rgb(30, 30, 30);
+  cursor: pointer;
+}
+
+.note {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 400px;
+  height: 400px;
+  margin: 30px;
+}
+
+.note .tools {
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+}
+
+.note .tools button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+
+.note .main {
+  background-color: #fff;
+  overflow: hidden;
+  height: 400px;
+  width: 100%;
+  padding: 1.1rem;
+}
+
+.note textarea {
+  padding: 1.2rem;
+  outline: none;
+  font-family: inherit;
+  font-size: 1.2rem;
+  border: none;
+  height: 400px;
+  width: 100%;
+}
+
+.note .hidden {
+  display: none;
+}
+
+#delete-btn {
+  color: rgb(30, 30, 30);
+}
+
+#edit-btn {
+  color: rgb(30, 30, 30);
+}
+
+#delete-btn:hover {
+  color: #fff;
+  transform: scale(1.1);
+  transition: 0.15s ease-in-out all;
+}
+
+#edit-btn:hover {
+  color: #fff;
+  transform: scale(1.1);
+  transition: 0.15s ease-in-out all;
+}
